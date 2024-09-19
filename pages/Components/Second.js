@@ -18,10 +18,11 @@ const BannerSection = () => {
               create lasting memories with your loved ones. Nestled in the heart
               of Ujjain, a city renowned for its rich cultural heritage and
               ancient temples, our homestays provide the perfect sanctuary.
-              Whether you're seeking peaceful reflection or quality family time,
-              our homestays offer the ideal setting for relaxation. Explore the
-              historic city of Ujjain while enjoying the comfort of Vakratunda
-              Homestay - the place where your memorable journey begins.
+              Whether you are seeking peaceful reflection or quality family
+              time, our homestays offer the ideal setting for relaxation.
+              Explore the historic city of Ujjain while enjoying the comfort of
+              Vakratunda Homestay - the place where your memorable journey
+              begins.
             </p>
           </div>
         </div>
