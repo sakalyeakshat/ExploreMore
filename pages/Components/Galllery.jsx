@@ -15,7 +15,7 @@ const Gallery = () => {
         <div className="text-center pb-10">
           <h2 className="text-4xl font-bold text-gray-900 mb-2">Our Gallery</h2>
           <p className="text-lg text-gray-600">
-            Explore the essence of beauty in our gallery's intimate space.
+            Explore the essence of beauty in our gallery intimate space.
           </p>
         </div>
 
