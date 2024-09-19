@@ -3,9 +3,9 @@ import React from "react";
 const BannerSection = () => {
   return (
     <div
-      className="w-full bg-cover bg-center py-44"
+      className="w-full bg-cover bg-center py-44 mt-10"
       style={{ backgroundImage: "url(/images/banner-2.jpg)" }}>
-      <div className="lg:max-w-[1300px] mx-auto">
+      <div className="w-full mx-auto">
         <div className="text-center mb-4">
           <h1 className="text-4xl font-bold font-montserrat text-green-700">
             VAKRATUNDA HOMESTAY
@@ -13,7 +13,7 @@ const BannerSection = () => {
         </div>
         <div className="flex justify-center">
           <div className="px-24">
-            <p className="text-center text-lg leading-relaxed text-gray-800">
+            <p className="text-center text-lg leading-relaxed text-gray-800 sm:block hidden">
               Vakratunda Homestays in Ujjain offers a unique opportunity to
               create lasting memories with your loved ones. Nestled in the heart
               of Ujjain, a city renowned for its rich cultural heritage and

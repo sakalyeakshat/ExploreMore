@@ -2,8 +2,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="lg:max-w-[1300px] mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <section className="text-gray-600 body-font w-full">
+      <div className="w-full mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
         <a className="flex  items-center text-gray-900 mb-4 md:mb-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"

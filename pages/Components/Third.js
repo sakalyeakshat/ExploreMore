@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 const DestinationsNearby = () => {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-[1270px] mx-auto">
+      <div className="w-full mx-auto">
         <div className="mb-12 text-center">
           <h4 className="text-4xl font-extrabold text-green-600 mb-2">
             Destinations Nearby
@@ -23,9 +23,6 @@ const DestinationsNearby = () => {
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
-          pagination={{
-            clickable: true,
-          }}
           breakpoints={{
             640: {
               slidesPerView: 1,
