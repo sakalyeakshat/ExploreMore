@@ -8,14 +8,14 @@ import Third from "./Components/Third";
 
 const index = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <First />
       <Second />
       <Third />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

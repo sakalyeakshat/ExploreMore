@@ -2,9 +2,9 @@ import React from "react";
 
 const SocialMediaSection = () => {
   return (
-    <section className="w-full h-[88vh] relative">
+    <section className=" h-[88vh] relative">
       <img
-        src="/images/first.jpg"
+        src="/images/first.webp"
         alt="Your Image"
         className="object-cover w-full h-full"
       />
