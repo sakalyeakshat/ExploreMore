@@ -18,12 +18,12 @@ const BannerSection = () => {
               in Ujjain. Our cozy accommodations offer a perfect blend of modern
               comfort and traditional charm. Immerse yourself in the spiritual
               ambiance of this ancient city, known for its sacred Mahakaleshwar
-              Temple. Whether you're a pilgrim or a curious traveler, our
-              homestay serves as an ideal base to explore Ujjain's rich history
-              and vibrant culture. Enjoy home-cooked meals, personalized
+              Temple. Whether you are a pilgrim or a curious traveler, our
+              homestay serves as an ideal base to explore Ujjain&apos; rich
+              history and vibrant culture. Enjoy home-cooked meals, personalized
               service, and insider tips to make your stay truly memorable. At
-              Vakratunda Homestay, we're not just offering a place to stay –
-              we're inviting you to become part of our family.
+              Vakratunda Homestay, we are not just offering a place to stay – we
+              are inviting you to become part of our family.
             </p>
           </div>
         </div>
