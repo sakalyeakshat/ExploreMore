@@ -96,16 +96,6 @@ const DestinationsNearby = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-
-        <div className="text-center">
-          <a href="#">
-            <button
-              type="button"
-              className="bg-green-500 hover:bg-green-600 text-white rounded-full py-3 px-6 text-lg font-bold shadow-md transition-transform transform hover:scale-105">
-              VIEW ALL DESTINATIONS &#8594;
-            </button>
-          </a>
-        </div>
       </div>
     </section>
   );

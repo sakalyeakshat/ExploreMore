@@ -6,7 +6,7 @@ import First from "./Components/First";
 import Second from "./Components/Second";
 import Third from "./Components/Third";
 import Gallery from "./Components/Galllery";
-
+import TestimonialAndTrustedBy from "./Components/Testimonial";
 const index = () => {
   return (
     <div className="overflow-x-auto mx-2 sm:mx-0">
@@ -15,6 +15,7 @@ const index = () => {
       <Second />
       <Gallery />
       <Third />
+      <TestimonialAndTrustedBy />
       <Contact />
       <Footer />
     </div>

@@ -14,15 +14,16 @@ const BannerSection = () => {
         <div className="flex justify-center">
           <div className="px-24">
             <p className="text-center text-lg leading-relaxed text-gray-800 sm:block hidden">
-              Vakratunda Homestays in Ujjain offers a unique opportunity to
-              create lasting memories with your loved ones. Nestled in the heart
-              of Ujjain, a city renowned for its rich cultural heritage and
-              ancient temples, our homestays provide the perfect sanctuary.
-              Whether you are seeking peaceful reflection or quality family
-              time, our homestays offer the ideal setting for relaxation.
-              Explore the historic city of Ujjain while enjoying the comfort of
-              Vakratunda Homestay - the place where your memorable journey
-              begins.
+              Experience the warmth of Indian hospitality at Vakratunda Homestay
+              in Ujjain. Our cozy accommodations offer a perfect blend of modern
+              comfort and traditional charm. Immerse yourself in the spiritual
+              ambiance of this ancient city, known for its sacred Mahakaleshwar
+              Temple. Whether you're a pilgrim or a curious traveler, our
+              homestay serves as an ideal base to explore Ujjain's rich history
+              and vibrant culture. Enjoy home-cooked meals, personalized
+              service, and insider tips to make your stay truly memorable. At
+              Vakratunda Homestay, we're not just offering a place to stay –
+              we're inviting you to become part of our family.
             </p>
           </div>
         </div>
