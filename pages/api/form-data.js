@@ -1,24 +1,27 @@
-import { NextRequest, NextResponse } from 'next/server';
-import FormDataModel from '@/models/FormData';
+import connectToDatabase from "../../lib/mongoose";
+import FormData from "@/models/FormData";
 
-async function saveFormData(req) {
-  const body = await req.json();
+console.log("MONGODB_URI:", process.env.MONGODB_URI);
+
+export default async function handler(req, res) {
+  const { method } = req;
+
+  await connectToDatabase();
+
+  switch (method) {
+    case "POST":
+      try {
+        const data = req.body;
   
-  try {
-    const collection = await getCollection('form_data');
-    
-    const result = await collection.insertOne(body);
-    
-    return NextResponse.json({ 
-      message: 'Form data saved successfully', 
-      id: result.insertedId 
-    }, { status: 201 });
-  } catch (error) {
-    console.error('Error saving form data:', error);
-    return NextResponse.json({ message: 'Failed to save form data' }, { status: 500 });
+          const newData = new FormData(data);
+          await newData.save();
+          res.status(201).json(newData);
+        } catch (error) {
+        res.status(500).json({ error: "Server error" });
+      }
+      break;
+    default:
+      res.setHeader("Allow", ["POST"]);
+      res.status(405).end(`Method ${method} Not Allowed`);
   }
-}
-
-export async function POST(request) {
-  return saveFormData(request);
 }

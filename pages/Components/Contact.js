@@ -1,6 +1,49 @@
 import React from "react";
 
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    moblie: '',
+    message: '',
+  });
+
+  const [status, setStatus] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Submitting...');
+
+    try {
+      const res = await fetch('/api/form-data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setStatus('Message sent successfully!');
+        setFormData({ name: '', email: '', number: '', message: '' });
+      } else {
+        setStatus(`Error: ${data.error}`);
+      }
+    } catch (error) {
+      setStatus(`Error: ${error.message}`);
+    }
+  };
+
   return (
     <>
       <section classNameName="relative z-10 overflow-hidden bg-white  py-20 lg:py-[120px] ">
@@ -103,11 +146,13 @@ const Contact = () => {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="mb-6">
                     <input
                       type="text"
                       placeholder="Your Name"
+                      value={formData.name}
+                      onChange={handleChange}
                       className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                     />
                   </div>
@@ -115,6 +160,8 @@ const Contact = () => {
                     <input
                       type="email"
                       placeholder="Your Email"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                     />
                   </div>
@@ -122,6 +169,8 @@ const Contact = () => {
                     <input
                       type="text"
                       placeholder="Your Phone"
+                      value={formData.mobile}
+                      onChange={handleChange}
                       className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                     />
                   </div>
@@ -129,6 +178,8 @@ const Contact = () => {
                     <textarea
                       rows="6"
                       placeholder="Your Message"
+                      value={formData.message}
+                      onChange={handleChange}
                       className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
                   </div>
                   <div>
