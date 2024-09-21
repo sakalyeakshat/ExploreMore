@@ -62,7 +62,7 @@ const Footer = () => {
           <p className="mb-0">
             Copyright &nbsp;
             {new Date().getFullYear()} - A N NOUFEL &nbsp; | Website Designed
-            and Developed By &nbsp;
+            and Developed By{" "}
             <a href="https://www.honeycombindia.net" className="text-success">
               Mayank and Aaradhya
             </a>

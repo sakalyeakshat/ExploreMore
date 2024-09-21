@@ -1,13 +1,11 @@
-"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const DestinationsNearby = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 px-16 bg-gray-50">
       <div className="w-full mx-auto">
         <div className="mb-12 text-center">
           <h4 className="text-4xl font-extrabold text-green-600 mb-2">
@@ -45,7 +43,7 @@ const DestinationsNearby = () => {
                 src="/images/card-1.jpg"
                 loading="lazy"
                 alt="Mahakal Temple"
-                className="w-full h-64 object-cover rounded-xl shadow-lg"
+                className="w-full h-80  object-cover rounded-xl shadow-lg"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Mahakaleshwar Jyotirlinga
@@ -60,7 +58,7 @@ const DestinationsNearby = () => {
                 src="/images/card-2.jpg"
                 loading="lazy"
                 alt="Isckon Temple"
-                className="w-full h-64 object-cover rounded-xl shadow-lg"
+                className="w-full h-80 object-cover rounded-xl shadow-lg "
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Isckon Temple
@@ -72,26 +70,26 @@ const DestinationsNearby = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                src="/images/card-2.jpg"
+                src="/images/card-6.jpg"
                 loading="lazy"
                 alt="Isckon Temple"
-                className="w-full h-64 object-cover rounded-xl shadow-lg"
+                className="w-full h-80 object-cover rounded-xl shadow-lg"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Isckon Temple
+                Ram Ghat
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                src="/images/card-2.jpg"
+                src="/images/card-4.webp"
                 loading="lazy"
                 alt="Isckon Temple"
-                className="w-full h-64 object-cover rounded-xl shadow-lg"
+                className="w-full h-80 object-cover rounded-xl shadow-lg"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Isckon Temple
+                Mahakal Lok
               </div>
             </div>
           </SwiperSlide>

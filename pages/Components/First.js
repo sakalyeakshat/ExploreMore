@@ -4,7 +4,7 @@ const SocialMediaSection = () => {
   return (
     <section className=" h-[88vh] relative w-full">
       <img
-        src="/images/img11.jpg"
+        src="/images/first.webp"
         alt="Your Image"
         className="object-cover w-full h-full"
       />
