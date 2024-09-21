@@ -9,14 +9,26 @@ import Testimonial from "./Components/Testimonial";
 import Footer from "./Components/Footer";
 const index = () => {
   return (
-    <div className="overflow-x-auto mx-2 sm:mx-0">
+    <div className="overflow-x-auto mx-2 sm:mx-0 bg-green-100/5">
       <Navbar />
-      <Hero />
-      <About />
-      <Gallery />
-      <Destination />
-      <Testimonial />
-      <Contact />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="gallery">
+        <Gallery />
+      </div>
+      <div id="destination">
+        <Destination />
+      </div>
+      <div id="testimonial">
+        <Testimonial />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

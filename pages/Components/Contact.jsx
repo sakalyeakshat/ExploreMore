@@ -44,11 +44,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
-      <div className="container px-10 py-20 mx-auto">
+    <section className="overflow-hidden bg-white ">
+      <div className="container px-10  mx-auto">
         <div className="flex flex-wrap -mx-4 lg:justify-between">
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-            <div className="mb-12 max-w-[570px] lg:mb-0">
+            <div className="mb-12 py-16 max-w-[570px] lg:mb-0">
               <span className="block mb-4 text-3xl font-semibold text-primary">
                 Contact Us
               </span>
@@ -56,7 +56,7 @@ const Contact = () => {
                 GET IN TOUCH WITH US
               </h2>
 
-              <div className="mb-8 flex w-full max-w-[370px]">
+              <div className="mb-8 flex w-full max-w-[370px] items-center">
                 <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                   <svg
                     width="32"
@@ -72,10 +72,11 @@ const Contact = () => {
                 </div>
                 <div className="w-full">
                   <h4 className="mb-1 text-xl font-bold">Our Location</h4>
-                  <p className="">Ujjain</p>
+                  <p className="">B-27/5, Vasant Vihar, Ujjain</p>
                 </div>
               </div>
-              <div className="mb-8 flex w-full max-w-[370px]">
+
+              <div className="mb-8 flex w-full max-w-[370px] items-center">
                 <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                   <svg
                     width="32"
@@ -105,16 +106,12 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
-                    Phone Number
-                  </h4>
-                  <p className="text-base text-body-color dark:text-dark-6">
-                    +91-1111111111
-                  </p>
+                  <h4 className="mb-1 text-xl font-bold">Phone Number</h4>
+                  <p className="text-base ">+918085863266</p>
                 </div>
               </div>
-              <div className="mb-8 flex w-full max-w-[370px]">
-                <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+              <div className="mb-8 flex w-full max-w-[370px] items-center">
+                <div className=" mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                   <svg
                     width="32"
                     height="32"
@@ -128,18 +125,18 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
-                    Email Address
-                  </h4>
-                  <p className="text-base text-body-color dark:text-dark-6">
-                    vakratundahomestay@gmail.com
+                  <h4 className="mb-1 text-xl font-bold">Email Address</h4>
+                  <p className="text-base">
+                    <a href="mailto:vakratundahomestay@gmail.com">
+                      vakratundahomestay@gmail.com
+                    </a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
+          <div className="w-full px-4 lg:w-1/2 xl:w-5/12 py-2">
+            <div className="relative p-8  sm:p-12">
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">
                   <input
@@ -148,7 +145,7 @@ const Contact = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                    className="border-stroke w-full rounded border py-3 px-[14px] text-base outline-none"
                   />
                 </div>
                 <div className="mb-6">
@@ -158,7 +155,7 @@ const Contact = () => {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                    className="border-stroke  w-full rounded border py-3 px-[14px] text-base outline-none"
                   />
                 </div>
                 <div className="mb-6">
@@ -178,12 +175,12 @@ const Contact = () => {
                     placeholder="Your Message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
+                    className="border-stroke  w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
                 </div>
                 <div>
                   <button
                     type="submit"
-                    className="w-full p-3 text-white bg-green-400 transition border rounded border-primary bg-primary hover:bg-opacity-90">
+                    className="w-full p-3 text-white bg-green-400 transition border rounded  hover:bg-opacity-90">
                     Send Message
                   </button>
                 </div>

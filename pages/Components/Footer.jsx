@@ -8,7 +8,7 @@ const Footer = () => {
           className="flex justify-center flex-col-reverse items-center"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://wa.me/911111111111">
+          href="https://wa.me/918085863266">
           <svg
             className="w-12 h-12"
             viewBox="0 0 256 258"
@@ -60,12 +60,8 @@ const Footer = () => {
       <div className="text-black bg-green-500/20 pt-2 pb-5 border-t mt-md-5 d-flex flex-column flex-md-row justify-content-between">
         <div className="text-center">
           <p className="mb-0">
-            Copyright &nbsp;
-            {new Date().getFullYear()} - A N NOUFEL &nbsp; | Website Designed
-            and Developed By{" "}
-            <a href="https://www.honeycombindia.net" className="text-success">
-              Mayank and Aaradhya
-            </a>
+            Vakratundahomestay.com | Website Designed and Developed By Mayank &
+            Aaradhya
           </p>
         </div>
         <div className="text-center pt-3 pt-md-0">

@@ -9,7 +9,7 @@ import "swiper/css/parallax";
 
 const Gallery = () => {
   return (
-    <section className="py-16 sm:py-24 ">
+    <section className="py-16 sm:py-16 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center pb-10">

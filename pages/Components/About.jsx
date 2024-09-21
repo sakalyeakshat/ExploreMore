@@ -3,7 +3,7 @@ import React from "react";
 const BannerSection = () => {
   return (
     <div
-      className="w-full bg-cover bg-center py-44 mt-10"
+      className="w-full bg-cover bg-center py-44 mt-32"
       style={{ backgroundImage: "url(/images/banner-2.webp)" }}>
       <div className="w-full mx-auto">
         <div className="text-center mb-4">

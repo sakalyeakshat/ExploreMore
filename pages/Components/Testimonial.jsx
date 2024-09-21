@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -8,42 +8,43 @@ const Testimonial = () => {
   const TestimonialData = [
     {
       id: 1,
-      image: "/images/guest-1.jpg",
+      // image: "/images/guest-1.jpg",
       content:
         "Our stay at this homestay was beyond amazing! The hosts were incredibly welcoming, and the ambiance made us feel at home. We loved waking up to the scenic views and peaceful environment every day.",
-      name: "Emily Johnson",
-      role: "Guest from New York",
+      name: "Ram Chaturvedi",
+      role: "Guest from Lucknow",
     },
     {
       id: 2,
-      image: "/images/guest-2.jpg",
+      // image: "/images/guest-2.jpg",
       content:
         "The homestay was perfect for our family vacation. The rooms were cozy, and the food was delicious. The kids especially enjoyed the garden and outdoor activities. Definitely coming back!",
-      name: "David Lee",
+      name: "Rajesh Kumar",
       role: "Family Guest",
     },
     {
       id: 3,
-      image: "/images/guest-3.jpg",
+      // image: "/images/guest-3.jpg",
       content:
         "I had an unforgettable experience at this homestay. The personalized service, attention to detail, and the warmth of the hosts made all the difference. Highly recommend .",
-      name: "Sophia Martinez",
+      name: "Krish Gupta",
       role: "Solo Traveler",
     },
+
     {
       id: 4,
-      image: "/images/guest-4.jpg",
+      // image: "/images/guest-4.jpg",
       content:
         "The perfect escape from city life! The homestay offered serene views, excellent hospitality, and a truly relaxing environment. It was exactly what we needed for our weekend retreat.",
-      name: "Michael Brown",
-      role: "Couple from London",
+      name: "Arjun Srivastav & Anjali Srivastav",
+      role: "Couple from New Delhi",
     },
   ];
 
   return (
     <>
       {/* Testimonial Section */}
-      <section className="py-20 px-16 bg-gray-50">
+      <section className="py-36 px-16">
         <div className="w-full mx-auto">
           <div className="mb-12 text-center">
             <h4 className="text-4xl font-extrabold text-green-600 mb-2">
@@ -87,13 +88,13 @@ const Testimonial = () => {
                         {data.content}
                       </p>
                       <div className="inline-flex items-center bg-gray-100 px-5 pt-2 pb-[6px] rounded-b-xl w-full">
-                        <Image
+                        {/* <Image
                           src={data.image}
                           alt={data.name}
                           className="w-12 h-12 rounded-full object-cover object-center"
                           width={80}
                           height={100}
-                        />
+                        /> */}
                         <span className="flex-grow flex flex-col pl-4">
                           <span className="font-semibold text-gray-800">
                             {data.name}
