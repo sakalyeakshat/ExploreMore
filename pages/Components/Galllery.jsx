@@ -9,7 +9,7 @@ import "swiper/css/parallax";
 
 const Gallery = () => {
   return (
-    <section className="py-16 sm:py-24 bg-gray-100">
+    <section className="py-16 sm:py-24 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center pb-10">
@@ -48,12 +48,12 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
+                className="w-full h-96 object-cover"
                 src="/images/img1.jpg"
-                alt="Golden & Silver Metal Belt Watch"
+                alt="Bathroom"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
+                Bathroom
               </div>
             </div>
           </SwiperSlide>
@@ -62,12 +62,12 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
+                className="w-full h-96 object-cover"
                 src="/images/img2.jpg"
-                alt="Golden & Silver Metal Belt Watch"
+                alt="Bedroom"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
+                Bedroom
               </div>
             </div>
           </SwiperSlide>
@@ -75,12 +75,12 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
+                className="w-full h-96 object-cover "
                 src="/images/img3.jpg"
-                alt="Golden & Silver Metal Belt Watch"
+                alt="Balcony"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
+                Bedroom
               </div>
             </div>
           </SwiperSlide>
@@ -88,12 +88,12 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
+                className="w-full h-96 object-cover"
                 src="/images/img4.jpg"
-                alt="Golden & Silver Metal Belt Watch"
+                alt="Bedroom"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
+                Bedroom
               </div>
             </div>
           </SwiperSlide>
@@ -101,116 +101,28 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
+                className="w-full h-96 object-cover "
                 src="/images/img5.jpg"
-                alt="Golden & Silver Metal Belt Watch"
+                alt="Balcony"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
+                Balcony
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
+                className="w-full h-96 object-cover "
                 src="/images/img6.jpg"
-                alt="Golden & Silver Metal Belt Watch"
+                alt="Toilet"
               />
-              <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
-              </div>
-            </div>
-          </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="swiper-slide-content">
-              <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-                src="/images/img7.jpg"
-                alt="Golden & Silver Metal Belt Watch"
-              />
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
+                Toilet
               </div>
             </div>
           </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="swiper-slide-content">
-              <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-                src="/images/img8.jpg"
-                alt="Golden & Silver Metal Belt Watch"
-              />
-              <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="swiper-slide-content">
-              <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-                src="/images/img9.jpg"
-                alt="Golden & Silver Metal Belt Watch"
-              />
-              <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swiper-slide-content">
-              <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-                src="/images/img10.jpg"
-                alt="Golden & Silver Metal Belt Watch"
-              />
-              <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swiper-slide-content">
-              <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-                src="/images/img11.jpg"
-                alt="Golden & Silver Metal Belt Watch"
-              />
-              <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swiper-slide-content">
-              <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-                src="/images/img12.jpg"
-                alt="Golden & Silver Metal Belt Watch"
-              />
-              <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swiper-slide-content">
-              <img
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-                src="/images/img13.jpg"
-                alt="Golden & Silver Metal Belt Watch"
-              />
-              <div className="text-center mt-4 font-semibold text-gray-700">
-                Golden & Silver Metal Belt Watch
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* Add more Swiper slides as needed */}
         </Swiper>
       </div>
     </section>

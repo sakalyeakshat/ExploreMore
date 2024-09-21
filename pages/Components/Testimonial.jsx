@@ -3,9 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 
-const TestimonialAndTrustedBy = () => {
+const Testimonial = () => {
   const TestimonialData = [
     {
       id: 1,
@@ -116,4 +115,4 @@ const TestimonialAndTrustedBy = () => {
   );
 };
 
-export default TestimonialAndTrustedBy;
+export default Testimonial;
