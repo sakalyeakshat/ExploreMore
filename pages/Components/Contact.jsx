@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { PropagateLoader } from "react-spinners";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ const Contact = () => {
   });
 
   const [status, setStatus] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -19,6 +21,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     setStatus("Submitting...");
 
     try {
@@ -40,6 +43,8 @@ const Contact = () => {
       }
     } catch (error) {
       setStatus(`Error: ${error.message}`);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -180,8 +185,19 @@ const Contact = () => {
                 <div>
                   <button
                     type="submit"
-                    className="w-full p-3 text-white bg-green-400 transition border rounded  hover:bg-opacity-90">
-                    Send Message
+                    className="w-full p-3 text-white bg-green-400 transition border rounded  hover:bg-opacity-90"
+                    disabled={isSubmitting}>
+                    {isSubmitting ? (
+                      <PropagateLoader
+                        color="white"
+                        cssOverride={{}}
+                        loading
+                        size={5}
+                        speedMultiplier={1}
+                      />
+                    ) : (
+                      "Send Message"
+                    )}
                   </button>
                 </div>
               </form>

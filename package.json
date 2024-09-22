@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "@types/mongoose": "^5.11.97",
-    "gsap": "^3.12.5",
     "mongodb": "^6.9.0",
     "mongoose": "^8.6.3",
     "next": "14.2.12",
     "react": "^18",
     "react-dom": "^18",
+    "react-spinners": "^0.14.1",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

@@ -12,11 +12,11 @@ export default async function handler(req, res) {
     case "POST":
       try {
         const data = req.body;
-  
-          const newData = new FormData(data);
-          await newData.save();
-          res.status(201).json(newData);
-        } catch (error) {
+
+        const newData = new FormData(data);
+        await newData.save();
+        res.status(201).json(newData);
+      } catch (error) {
         res.status(500).json({ error: "Server error" });
       }
       break;

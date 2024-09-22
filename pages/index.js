@@ -11,7 +11,7 @@ const index = () => {
   return (
     <div className="overflow-x-auto mx-2 sm:mx-0 bg-green-100/5">
       <Navbar />
-      <div id="home">
+      <div>
         <Hero />
       </div>
       <div id="about">
