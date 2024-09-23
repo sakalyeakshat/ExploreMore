@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
+import CustomNavbar from "./Components/HomeNavbar";
+
 import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Gallery from "./Components/Galllery";
@@ -10,7 +11,8 @@ import Footer from "./Components/Footer";
 const index = () => {
   return (
     <div className="overflow-x-auto mx-2 sm:mx-0 bg-green-100/5">
-      <Navbar />
+      {/* <Navbar /> */}
+      <CustomNavbar />
       <div>
         <Hero />
       </div>
