@@ -85,7 +85,7 @@ const ContactAdminDashboard = () => {
                     {entry.email}
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-900">
-                    {entry.mobile}
+                    {entry.mobile || "N/A"}
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-900">
                     {entry.message}

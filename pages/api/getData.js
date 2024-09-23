@@ -4,7 +4,7 @@ import FormData from "@/models/FormData";
 
 export default async function handler(req, res) {
   try {
-    const client = await connectToDatabase;
+    const client = connectToDatabase;
 
     // Fetch the data from a collection
     const data = await FormData.find({});
