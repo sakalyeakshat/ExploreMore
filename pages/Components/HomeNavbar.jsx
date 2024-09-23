@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,12 +25,14 @@ const Navbar = () => {
   return (
     <nav className="bg-white text-black">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img src="/images/logo.png" className="h-8 sm:h-10" alt="Logo" /> */}
           <span className="text-xl sm:text-2xl font-semibold whitespace-nowrap">
             Vakratunda Homestay
           </span>
-        </a>
+        </Link>
         <button
           onClick={toggleMenu}
           type="button"
@@ -59,32 +62,32 @@ const Navbar = () => {
           id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
             <li>
-              <a
+              <Link
                 href="#about"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 transition-all duration-300 hover:scale-110">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#gallery"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 transition-all duration-300 hover:scale-110">
                 Gallery
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#destination"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 transition-all duration-300 hover:scale-110">
                 Destinations
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#testimonial"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 transition-all duration-300 hover:scale-110">
                 Testimonials
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
