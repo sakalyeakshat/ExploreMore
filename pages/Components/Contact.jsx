@@ -116,7 +116,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="mb-8 flex w-full max-w-[370px] items-center">
-                <div className=" mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                   <svg
                     width="32"
                     height="32"
@@ -130,17 +130,15 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="mb-1 text-xl font-bold">Email Address</h4>
-                  <p className="text-base">
-                    <a href="mailto:vakratundahomestay@gmail.com">
-                      vakratundahomestay@gmail.com
-                    </a>
-                  </p>
+                  <h4 className="mb-1 text-xl font-bold">
+                    {" "}
+                    <a href="mailto:vakratundahomestay@gmail.com">Email</a>
+                  </h4>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2 xl:w-5/12 py-2">
+          <div className="w-full px-4 lg:w-1/2 xl:w-5/12  sm:-my-0 -my-24">
             <div className="relative p-8  sm:p-12">
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">

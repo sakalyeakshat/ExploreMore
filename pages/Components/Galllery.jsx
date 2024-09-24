@@ -123,6 +123,59 @@ const Gallery = () => {
               </div>
             </div>
           </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="swiper-slide-content">
+              <img
+                className="w-full h-96 object-cover "
+                src="/images/img8.jpg"
+                alt="Toilet"
+              />
+
+              <div className="text-center mt-4 font-semibold text-gray-700">
+                Reception
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-slide-content">
+              <img
+                className="w-full h-96 object-cover "
+                src="/images/img9.jpg"
+                alt="Toilet"
+              />
+
+              <div className="text-center mt-4 font-semibold text-gray-700">
+                Balcony
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-slide-content">
+              <img
+                className="w-full h-96 object-cover "
+                src="/images/img10.jpg"
+                alt="Toilet"
+              />
+
+              <div className="text-center mt-4 font-semibold text-gray-700">
+                Property
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-slide-content">
+              <img
+                className="w-full h-96 object-cover "
+                src="/images/img11.jpg"
+                alt="Toilet"
+              />
+
+              <div className="text-center mt-4 font-semibold text-gray-700">
+                Garden Facing Property
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>

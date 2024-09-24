@@ -23,12 +23,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white text-black">
+    <nav className="bg-transparent text-black">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse">
-          {/* <img src="/images/logo.png" className="h-8 sm:h-10" alt="Logo" /> */}
+          <img src="/images/logo.png" className="h-8 sm:h-12" alt="Logo" />
           <span className="text-xl sm:text-2xl font-semibold whitespace-nowrap">
             Vakratunda Homestay
           </span>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center w-auto  h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center w-auto h-10 justify-center text-sm text-black rounded-lg md:hidden hover:text-gray-900 transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen}>
           <span className="sr-only">Toggle menu</span>
@@ -55,6 +55,7 @@ const Navbar = () => {
             />
           </svg>
         </button>
+
         <div
           className={`${
             isMenuOpen || !isMobile ? "block" : "hidden"

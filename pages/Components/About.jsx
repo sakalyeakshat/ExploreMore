@@ -28,15 +28,13 @@ const BannerSection = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-between mt-12">
-          <div className="w-1/2 md:w-1/4 text-center">
+          <div className="w-1/2 md:w-1/4 text-center mb-10">
             <img
               src="https://www.anamalahomestays.com/assets/img/icons/ep.svg"
-              className="mx-auto h-16 w-16"
+              className="mx-auto h-16 w-16 "
               alt="Environmentally Conscious"
             />
-            <p className="text-black mt-4 font-semibold">
-              Environmentally Conscious
-            </p>
+            <p className="text-black mt-4 font-semibold ">Eco-Friendly</p>
           </div>
           <div className="w-1/2 md:w-1/4 text-center">
             <img
