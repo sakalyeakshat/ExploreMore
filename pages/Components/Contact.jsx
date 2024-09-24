@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="overflow-hidden bg-white ">
+    <section className=" bg-white ">
       <div className="container px-10  mx-auto">
         <div className="flex flex-wrap -mx-4 lg:justify-between">
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -138,7 +138,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2 xl:w-5/12  sm:-my-0 -my-24">
+          <div className="w-full px-4 lg:w-1/2 xl:w-5/12  ">
             <div className="relative p-8  sm:p-12">
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">
