@@ -49,12 +49,12 @@ const Contact = () => {
   };
 
   return (
-    <section className=" bg-white ">
-      <div className="container px-10  mx-auto">
-        <div className="flex flex-wrap -mx-4 lg:justify-between">
-          <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
+    <section className="  bg-green-900/20">
+      <div className="  container px-10  mx-auto">
+        <div className="  flex flex-wrap -mx-4 lg:justify-between">
+          <div className="  w-full px-4 lg:w-1/2 xl:w-6/12">
             <div className="mb-12 py-16 max-w-[570px] lg:mb-0">
-              <span className="block mb-4 text-3xl font-semibold text-primary">
+              <span className="block mb-4 text-3xl font-semibold ">
                 Contact Us
               </span>
               <h2 className="text-black mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
@@ -200,43 +200,6 @@ const Contact = () => {
                 </div>
               </form>
               {status && <p className="mt-4 text-center">{status}</p>}
-              <div>
-                <span className="absolute -top-10 -right-9 z-[-1]">
-                  <svg
-                    width="100"
-                    height="100"
-                    viewBox="0 0 100 100"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                      fill="#11b91b"
-                    />
-                  </svg>
-                </span>
-                <span className="absolute -right-10 top-[90px] z-[-1]">
-                  <svg
-                    width="34"
-                    height="134"
-                    viewBox="0 0 34 134"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    {/* SVG circles */}
-                  </svg>
-                </span>
-                <span className="absolute -left-7 -bottom-7 z-[-1]">
-                  <svg
-                    width="107"
-                    height="134"
-                    viewBox="0 0 107 134"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    {/* SVG circles */}
-                  </svg>
-                </span>
-              </div>
             </div>
           </div>
         </div>

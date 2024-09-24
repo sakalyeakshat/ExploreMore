@@ -2,9 +2,7 @@ import React from "react";
 
 const BannerSection = () => {
   return (
-    <div
-      className="w-full bg-cover bg-center py-44 mt-32"
-      style={{ backgroundImage: "url(/images/banner-2.webp)" }}>
+    <div className="w-full bg-cover bg-center py-44  bg-green-900/20">
       <div className="w-full mx-auto">
         <div className="text-center mb-4">
           <h1 className="text-4xl font-bold font-montserrat text-green-700">

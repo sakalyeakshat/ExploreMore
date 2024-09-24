@@ -44,7 +44,7 @@ const Testimonial = () => {
   return (
     <>
       {/* Testimonial Section */}
-      <section className="py-36 px-16">
+      <section className="py-36 px-16 bg-green-900/20">
         <div className="w-full mx-auto">
           <div className="mb-12 text-center">
             <h4 className="text-4xl font-extrabold text-green-600 mb-2">

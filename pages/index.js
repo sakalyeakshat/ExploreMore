@@ -10,7 +10,7 @@ import Testimonial from "./Components/Testimonial";
 import Footer from "./Components/Footer";
 const index = () => {
   return (
-    <div className="overflow-x-auto mx-2 sm:mx-0 bg-green-100/5">
+    <div className="overflow-x-auto mx-2 sm:mx-0 scroll-smooth">
       {/* <Navbar /> */}
       <CustomNavbar />
       <div>
