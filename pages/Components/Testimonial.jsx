@@ -47,7 +47,7 @@ const Testimonial = () => {
       <section className="py-36 px-16 bg-green-900/20">
         <div className="w-full mx-auto">
           <div className="mb-12 text-center">
-            <h4 className="text-4xl font-extrabold text-green-600 mb-2">
+            <h4 className="text-4xl font-extrabold text-black mb-2">
               Guest Testimonials
             </h4>
             <p className="text-lg text-gray-600">

@@ -183,7 +183,7 @@ const Contact = () => {
                 <div>
                   <button
                     type="submit"
-                    className="w-full p-3 text-white bg-green-400 transition border rounded  hover:bg-opacity-90"
+                    className="w-full p-3 text-white bg-green-800 transition border rounded  hover:bg-opacity-90"
                     disabled={isSubmitting}>
                     {isSubmitting ? (
                       <PropagateLoader
