@@ -28,7 +28,7 @@ const Navbar = () => {
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/images/logo.png" className="h-16 sm:h-16" alt="Logo" />
+          <img src="/images/logo.png" className="h-14 sm:h-16" alt="Logo" />
           <span className="text-xl sm:text-2xl text-white font-semibold whitespace-nowrap">
             Vakratunda Homestay
           </span>
