@@ -22,6 +22,12 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    if (isMobile) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <nav className=" bg-opacity-10 backdrop-blur-sm text-white fixed top-0 left-0 right-0 z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -65,18 +71,23 @@ const Navbar = () => {
             <li>
               <Link
                 href="#about"
+                onClick={closeMenu}
                 className="block py-2 px-3  rounded md:p-0 transition-all duration-300 ">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#gallery" className="block py-2 px-3 rounded md:p-0 ">
+              <Link
+                href="#gallery"
+                onClick={closeMenu}
+                className="block py-2 px-3 rounded md:p-0 ">
                 Gallery
               </Link>
             </li>
             <li>
               <Link
                 href="#destination"
+                onClick={closeMenu}
                 className="block py-2 px-3 rounded md:p-0">
                 Destinations
               </Link>
@@ -84,6 +95,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#testimonial"
+                onClick={closeMenu}
                 className="block py-2 px-3  rounded  md:p-0 ">
                 Testimonials
               </Link>
