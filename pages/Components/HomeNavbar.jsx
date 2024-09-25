@@ -65,28 +65,26 @@ const Navbar = () => {
             <li>
               <Link
                 href="#about"
-                className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 transition-all duration-300 hover:scale-110">
+                className="block py-2 px-3  rounded md:p-0 transition-all duration-300 ">
                 About
               </Link>
             </li>
             <li>
-              <Link
-                href="#gallery"
-                className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 transition-all duration-300 hover:scale-110">
+              <Link href="#gallery" className="block py-2 px-3 rounded md:p-0 ">
                 Gallery
               </Link>
             </li>
             <li>
               <Link
                 href="#destination"
-                className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 transition-all duration-300 hover:scale-110">
+                className="block py-2 px-3 rounded md:p-0">
                 Destinations
               </Link>
             </li>
             <li>
               <Link
                 href="#testimonial"
-                className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 transition-all duration-300 hover:scale-110">
+                className="block py-2 px-3  rounded  md:p-0 ">
                 Testimonials
               </Link>
             </li>

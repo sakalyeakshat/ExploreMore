@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination, Parallax } from "swiper/modules";
 import "swiper/css";
@@ -8,13 +9,25 @@ import "swiper/css/autoplay";
 import "swiper/css/parallax";
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (src) => {
+    setSelectedImage(src);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
+
   return (
-    <section className="py-16 sm:py-16 bg-green-900/20 ">
+    <section className="sm:-my-24 -my-0  sm:py-28 py-20 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center pb-10">
-          <h2 className="text-4xl font-bold text-gray-900 mb-2">Our Gallery</h2>
-          <p className="text-lg text-gray-600">
+          <h2 className="sm:text-4xl text-3xl font-bold text-black mb-2   ">
+            Our Gallery
+          </h2>
+          <p className="sm:text-lg text-base text-gray-600">
             Explore the essence of beauty in our gallery intimate space.
           </p>
         </div>
@@ -48,9 +61,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover"
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img1.jpg"
                 alt="Bathroom"
+                onClick={() => openImage("/images/img1.jpg")}
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Bathroom
@@ -62,9 +76,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover"
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img2.jpg"
                 alt="Bedroom"
+                onClick={() => openImage("/images/img2.jpg")}
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Bedroom
@@ -75,9 +90,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover "
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img3.jpg"
                 alt="Balcony"
+                onClick={() => openImage("/images/img3.jpg")}
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Bedroom
@@ -88,9 +104,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover"
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img4.jpg"
                 alt="Bedroom"
+                onClick={() => openImage("/images/img4.jpg")}
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Bedroom
@@ -101,9 +118,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover "
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img5.jpg"
                 alt="Balcony"
+                onClick={() => openImage("/images/img5.jpg")}
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Balcony
@@ -113,9 +131,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover "
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img6.jpg"
                 alt="Toilet"
+                onClick={() => openImage("/images/img6.jpg")}
               />
 
               <div className="text-center mt-4 font-semibold text-gray-700">
@@ -127,9 +146,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover "
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img8.jpg"
                 alt="Toilet"
+                onClick={() => openImage("/images/img8.jpg")}
               />
 
               <div className="text-center mt-4 font-semibold text-gray-700">
@@ -140,9 +160,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover "
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img9.jpg"
                 alt="Toilet"
+                onClick={() => openImage("/images/img9.jpg")}
               />
 
               <div className="text-center mt-4 font-semibold text-gray-700">
@@ -153,9 +174,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover "
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img10.jpg"
                 alt="Toilet"
+                onClick={() => openImage("/images/img10.jpg")}
               />
 
               <div className="text-center mt-4 font-semibold text-gray-700">
@@ -166,9 +188,10 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <img
-                className="w-full h-96 object-cover "
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img11.jpg"
                 alt="Toilet"
+                onClick={() => openImage("/images/img11.jpg")}
               />
 
               <div className="text-center mt-4 font-semibold text-gray-700">
@@ -178,6 +201,19 @@ const Gallery = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+
+      {/* Full-screen image modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={closeImage}>
+          <img
+            src={selectedImage}
+            alt="Full-screen"
+            className="max-w-full max-h-full"
+          />
+        </div>
+      )}
     </section>
   );
 };

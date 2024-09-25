@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -44,13 +43,13 @@ const Testimonial = () => {
   return (
     <>
       {/* Testimonial Section */}
-      <section className="py-36 px-16 bg-green-900/20">
+      <section className="py-[80px] sm:py-32 px-16">
         <div className="w-full mx-auto">
           <div className="mb-12 text-center">
-            <h4 className="text-4xl font-extrabold text-black mb-2">
+            <h4 className="sm:text-4xl text-3xl font-bold text-black mb-2">
               Guest Testimonials
             </h4>
-            <p className="text-lg text-gray-600">
+            <p className="sm:text-lg text-base text-gray-600">
               Hear what our guests have to say about their stay
             </p>
           </div>
@@ -87,7 +86,7 @@ const Testimonial = () => {
                       <p className="leading-relaxed mb-6 text-[15px] px-5 pt-5 text-gray-700">
                         {data.content}
                       </p>
-                      <div className="inline-flex items-center bg-gray-100 px-5 pt-2 pb-[6px] rounded-b-xl w-full">
+                      <div className="inline-flex items-center bg-green-500/30 px-5 pt-2 pb-[6px] rounded-b-xl w-full">
                         {/* <Image
                           src={data.image}
                           alt={data.name}

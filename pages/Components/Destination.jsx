@@ -5,13 +5,13 @@ import "swiper/css/pagination";
 
 const DestinationsNearby = () => {
   return (
-    <section className="py-20 px-16 bg-green-900/20  ">
+    <section className="sm:py-28 py-12 px-16 ">
       <div className="w-full mx-auto">
         <div className="mb-12 text-center">
-          <h4 className="text-4xl font-extrabold text-black mb-2">
+          <h4 className="sm:text-4xl text-3xl font-bold text-black mb-2">
             Destinations Nearby
           </h4>
-          <p className="text-lg text-gray-600">
+          <p className="sm:text-lg text-base text-gray-600">
             Explore the most popular nearby attractions
           </p>
         </div>
@@ -43,7 +43,7 @@ const DestinationsNearby = () => {
                 src="/images/card-1.jpg"
                 loading="lazy"
                 alt="Mahakal Temple"
-                className="w-full h-80  object-cover rounded-xl shadow-lg"
+                className="w-full h-96 sm:h-80  object-cover rounded-xl shadow-lg"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Mahakaleshwar Jyotirlinga
@@ -58,7 +58,7 @@ const DestinationsNearby = () => {
                 src="/images/card-2.jpg"
                 loading="lazy"
                 alt="Isckon Temple"
-                className="w-full h-80 object-cover rounded-xl shadow-lg "
+                className="w-full h-96 sm:h-80  object-cover rounded-xl shadow-lg "
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Isckon Temple
@@ -73,7 +73,7 @@ const DestinationsNearby = () => {
                 src="/images/card-6.jpg"
                 loading="lazy"
                 alt="Isckon Temple"
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
+                className="w-full h-96 sm:h-80  object-cover rounded-xl shadow-lg"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Ram Ghat
@@ -86,7 +86,7 @@ const DestinationsNearby = () => {
                 src="/images/card-4.webp"
                 loading="lazy"
                 alt="Isckon Temple"
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
+                className="w-full h-96 sm:h-80  object-cover rounded-xl shadow-lg"
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Mahakal Lok

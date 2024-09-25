@@ -2,16 +2,20 @@ import React from "react";
 
 const BannerSection = () => {
   return (
-    <div className="w-full bg-cover bg-center py-44  bg-green-900/20">
+    <div className="w-full bg-cover bg-center sm:py-44 py-32 ">
       <div className="w-full mx-auto">
         <div className="text-center mb-4">
-          <h1 className="text-4xl font-bold text-black ">
+          <h1 className="sm:text-4xl text-3xl font-bold text-black ">
             VAKRATUNDA HOMESTAY
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="px-24">
-            <p className="text-center text-lg leading-relaxed text-gray-800 sm:block hidden">
+          <div className="sm:px-24 px-5">
+            <p className="text-center sm:text-lg  text-base  text-gray-800 sm:hidden  ">
+              Experience the warmth of Indian hospitality at Vakratunda Homestay
+              in Ujjain.{" "}
+            </p>
+            <p className="text-center sm:text-lg text-base leading-relaxed text-gray-800 sm:block hidden">
               Experience the warmth of Indian hospitality at Vakratunda Homestay
               in Ujjain. Our cozy accommodations offer a perfect blend of modern
               comfort and traditional charm. Immerse yourself in the spiritual

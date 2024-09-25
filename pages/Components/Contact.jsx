@@ -49,14 +49,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="  bg-green-900/20">
+    <section>
       <div className="  container px-10  mx-auto">
         <div className="  flex flex-wrap -mx-4 lg:justify-between">
           <div className="  w-full px-4 lg:w-1/2 xl:w-6/12">
             <div className="mb-12 py-16 max-w-[570px] lg:mb-0">
-              <span className="block mb-4 text-3xl font-semibold ">
-                Contact Us
-              </span>
               <h2 className="text-black mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                 GET IN TOUCH WITH US
               </h2>
@@ -139,7 +136,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12  ">
-            <div className="relative p-8  sm:p-12">
+            <div className="relative p-8  sm:p-12 ">
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">
                   <input
