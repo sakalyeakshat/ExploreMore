@@ -29,8 +29,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" bg-opacity-10 backdrop-blur-sm text-white fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className=" bg-opacity-10 backdrop-blur-sm  text-white fixed top-0 left-0 right-0 z-50">
+      <div className="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse">
