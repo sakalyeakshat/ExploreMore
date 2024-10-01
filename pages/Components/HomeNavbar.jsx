@@ -29,8 +29,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" bg-opacity-10 backdrop-blur-sm  text-white fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-opacity-10 backdrop-blur-sm text-white fixed top-0 left-0 right-0 z-50">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -39,6 +39,8 @@ const Navbar = () => {
             Vakratunda Homestay
           </span>
         </Link>
+
+        {/* Mobile Toggle Button */}
         <button
           onClick={toggleMenu}
           type="button"
@@ -62,17 +64,18 @@ const Navbar = () => {
           </svg>
         </button>
 
+        {/* Navbar Links */}
         <div
           className={`${
             isMenuOpen || !isMobile ? "block" : "hidden"
-          } w-full md:block md:w-auto `}
+          } w-full md:block md:w-auto`}
           id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  md:bg-transparent text-white">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-transparent text-white">
             <li>
               <Link
                 href="#about"
                 onClick={closeMenu}
-                className="block py-2 px-3  rounded md:p-0 transition-all duration-300 ">
+                className="block py-2 px-3 rounded transition-all duration-300 hover:bg-gray-200 hover:text-gray-800 md:hover:bg-transparent">
                 About
               </Link>
             </li>
@@ -80,7 +83,7 @@ const Navbar = () => {
               <Link
                 href="#gallery"
                 onClick={closeMenu}
-                className="block py-2 px-3 rounded md:p-0 ">
+                className="block py-2 px-3 rounded transition-all duration-300 hover:bg-gray-200 hover:text-gray-800 md:hover:bg-transparent">
                 Gallery
               </Link>
             </li>
@@ -88,7 +91,7 @@ const Navbar = () => {
               <Link
                 href="#destination"
                 onClick={closeMenu}
-                className="block py-2 px-3 rounded md:p-0">
+                className="block py-2 px-3 rounded transition-all duration-300 hover:bg-gray-200 hover:text-gray-800 md:hover:bg-transparent">
                 Destinations
               </Link>
             </li>
@@ -96,7 +99,7 @@ const Navbar = () => {
               <Link
                 href="#testimonial"
                 onClick={closeMenu}
-                className="block py-2 px-3  rounded  md:p-0 ">
+                className="block py-2 px-3 rounded transition-all duration-300 hover:bg-gray-200 hover:text-gray-800 md:hover:bg-transparent">
                 Testimonials
               </Link>
             </li>

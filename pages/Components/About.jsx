@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const BannerSection = () => {
   return (
@@ -30,37 +31,62 @@ const BannerSection = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-between mt-12">
-          <div className="w-1/2 md:w-1/4 text-center mb-10">
-            <img
+          <div className="w-1/2 md:w-1/5 text-center mb-10">
+            <Image
               src="https://www.anamalahomestays.com/assets/img/icons/ep.svg"
-              className="mx-auto h-16 w-16 "
+              className="mx-auto"
               alt="Environmentally Conscious"
+              width={64}
+              height={64}
             />
             <p className="text-black mt-4 font-semibold ">Eco-Friendly</p>
           </div>
-          <div className="w-1/2 md:w-1/4 text-center">
-            <img
+          <div className="w-1/2 md:w-1/5 text-center">
+            <Image
               src="https://www.anamalahomestays.com/assets/img/icons/hf.svg"
-              className="mx-auto h-16 w-16"
+              className="mx-auto"
               alt="Home Cooked Food"
+              width={64}
+              height={64}
             />
-            <p className="text-black mt-4 font-semibold">Home Cooked Food</p>
+            <p className="text-black mt-4 font-semibold">Breakfast Included</p>
           </div>
-          <div className="w-1/2 md:w-1/4 text-center">
-            <img
+          <div className="w-1/2 md:w-1/5 text-center">
+            <Image
               src="https://www.anamalahomestays.com/assets/img/icons/pl.svg"
-              className="mx-auto h-16 w-16"
+              className="mx-auto"
               alt="Peaceful Locale"
+              width={64}
+              height={64}
             />
             <p className="text-black mt-4 font-semibold">Peaceful Locale</p>
           </div>
-          <div className="w-1/2 md:w-1/4 text-center">
-            <img
+          <div className="w-1/2 md:w-1/5 text-center">
+            <Image
               src="https://www.anamalahomestays.com/assets/img/icons/ec.svg"
-              className="mx-auto h-16 w-16"
+              className="mx-auto"
               alt="Warm Hospitality"
+              width={64}
+              height={64}
             />
             <p className="text-black mt-4 font-semibold">Warm Hospitality</p>
+          </div>
+          <div className="w-1/2 md:w-1/5 text-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="mx-auto h-16 w-16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+              <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+              <line x1="12" y1="20" x2="12.01" y2="20" />
+            </svg>
+            <p className="text-black mt-4 font-semibold">Free Wi-Fi</p>
           </div>
         </div>
       </div>
