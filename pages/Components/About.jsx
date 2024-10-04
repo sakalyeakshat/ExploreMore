@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BannerSection = () => {
   return (
-    <div className="w-full bg-cover bg-center sm:py-44 py-32 ">
+    <div className="w-full bg-cover bg-center sm:py-28 py-32 ">
       <div className="w-full mx-auto">
         <div className="text-center mb-4">
           <h1 className="sm:text-4xl text-3xl font-bold text-black ">
@@ -30,8 +30,8 @@ const BannerSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between mt-12">
-          <div className="w-1/2 md:w-1/5 text-center mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12">
+          <div className="text-center mb-10">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/ep.svg"
               className="mx-auto"
@@ -41,7 +41,7 @@ const BannerSection = () => {
             />
             <p className="text-black mt-4 font-semibold ">Eco-Friendly</p>
           </div>
-          <div className="w-1/2 md:w-1/5 text-center">
+          <div className="text-center">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/hf.svg"
               className="mx-auto"
@@ -51,7 +51,7 @@ const BannerSection = () => {
             />
             <p className="text-black mt-4 font-semibold">Breakfast Included</p>
           </div>
-          <div className="w-1/2 md:w-1/5 text-center">
+          <div className="text-center">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/pl.svg"
               className="mx-auto"
@@ -61,17 +61,18 @@ const BannerSection = () => {
             />
             <p className="text-black mt-4 font-semibold">Peaceful Locale</p>
           </div>
-          <div className="w-1/2 md:w-1/5 text-center">
+          <div className="text-center">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/ec.svg"
               className="mx-auto"
               alt="Warm Hospitality"
               width={64}
               height={64}
+              loading="lazy"
             />
             <p className="text-black mt-4 font-semibold">Warm Hospitality</p>
           </div>
-          <div className="w-1/2 md:w-1/5 text-center">
+          <div className="text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="mx-auto h-16 w-16"
@@ -87,6 +88,42 @@ const BannerSection = () => {
               <line x1="12" y1="20" x2="12.01" y2="20" />
             </svg>
             <p className="text-black mt-4 font-semibold">Free Wi-Fi</p>
+          </div>
+
+          <div className="text-center">
+            <Image
+              src="/images/water.svg"
+              className="mx-auto"
+              alt="Warm Hospitality"
+              width={64}
+              height={64}
+              loading="lazy"
+            />
+            <p className="text-black mt-4 font-semibold">RO+UV Water</p>
+          </div>
+          <div className="text-center">
+            <Image
+              src="/images/car.svg"
+              className="mx-auto"
+              alt="Warm Hospitality"
+              width={64}
+              height={64}
+              loading="lazy"
+            />
+            <p className="text-black mt-4 font-semibold">Free Pick & Drop</p>
+          </div>
+          <div className="text-center">
+            <Image
+              src="/images/temple.svg"
+              className="mx-auto"
+              alt="Warm Hospitality"
+              width={64}
+              height={64}
+              loading="lazy"
+            />
+            <p className="text-black mt-4 font-semibold">
+              Free Mahakal Darshan
+            </p>
           </div>
         </div>
       </div>

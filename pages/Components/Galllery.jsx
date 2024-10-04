@@ -195,7 +195,7 @@ const Gallery = () => {
               />
 
               <div className="text-center mt-4 font-semibold text-gray-700">
-                Garden Facing Property
+                Parking Space
               </div>
             </div>
           </SwiperSlide>

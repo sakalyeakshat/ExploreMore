@@ -1,27 +1,43 @@
-import connectToDatabase from "../../lib/mongoose";
+import nodemailer from "nodemailer";
+import connectToDatabase from "@/lib/mongoose";
 import FormData from "@/models/FormData";
 
-console.log("MONGODB_URI:", process.env.MONGODB_URI);
-
 export default async function handler(req, res) {
-  const { method } = req;
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method Not Allowed" });
+  }
 
-  await connectToDatabase();
+  try {
+    await connectToDatabase();
 
-  switch (method) {
-    case "POST":
-      try {
-        const data = req.body;
+    const data = req.body; // Get form data from request
+    const newData = new FormData(data);
+    await newData.save(); // Save to MongoDB
 
-        const newData = new FormData(data);
-        await newData.save();
-        res.status(201).json(newData);
-      } catch (error) {
-        res.status(500).json({ error: "Server error" });
-      }
-      break;
-    default:
-      res.setHeader("Allow", ["POST"]);
-      res.status(405).end(`Method ${method} Not Allowed`);
+    // Set up Nodemailer to send email
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.EMAIL_USERNAME,
+        pass: process.env.EMAIL_PASSWORD,
+      },
+    });
+
+    const mailOptions = {
+      from: process.env.EMAIL_USERNAME, // Use your verified sender email
+      to: "mayanktilwankar2355@gmail.com", // Recipient's email
+      subject: `New Enquiry from ${data.name}!`, // Email subject
+      text: `You have received a new enquiry.\n\nName: ${data.name}\nEmail: ${data.email}\nMobile: ${data.mobile}\nMessage: ${data.message}`,
+    };
+
+    await transporter.sendMail(mailOptions); // Send the email
+
+    // Respond with success
+    res.status(201).json(newData);
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ error: "Server error", details: error.message });
   }
 }

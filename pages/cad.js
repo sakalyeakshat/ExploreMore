@@ -47,9 +47,7 @@ const ContactAdminDashboard = () => {
 
   return (
     <div className="container mx-auto p-8">
-      <h2 className="text-3xl font-bold mb-6 text-gray-800">
-        Contact Form Submissions
-      </h2>
+      <h2 className="text-3xl font-bold mb-6 text-gray-800">Contact Details</h2>
       <div className="overflow-x-auto bg-white rounded-lg shadow overflow-y-auto relative">
         <table className="border-collapse table-auto w-full whitespace-no-wrap bg-white table-striped relative">
           <thead>
