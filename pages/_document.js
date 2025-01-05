@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <title>Vakratunda Homestay</title>
+      <title>Explore-World</title>
       <body className="antialiased">
         <Main />
         <NextScript />

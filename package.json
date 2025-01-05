@@ -1,5 +1,5 @@
 {
-  "name": "vakratundahomestay",
+  "name": "exploreworld",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,11 +16,13 @@
     "lenis": "^1.1.13",
     "mongodb": "^6.9.0",
     "mongoose": "^8.6.3",
-    "next": "14.2.12",
+    "next": "^15.1.2",
     "nodemailer": "^6.9.15",
     "react": "^18",
     "react-dom": "^18",
+    "react-router-dom": "^7.1.1",
     "react-spinners": "^0.14.1",
+    "styled-components": "^6.1.13",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

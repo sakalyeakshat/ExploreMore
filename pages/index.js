@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import CustomNavbar from "./Components/HomeNavbar";
 import Lenis from "@studio-freight/lenis";
 import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Gallery from "./Components/Galllery";
-import Destination from "./Components/Destination";
+import Services from "./Components/Services";
+import Explore from "./Components/Explore";
+import DestinationsNearby from "./Components/DestinationsNearby";
 import Contact from "./Components/Contact";
-import Testimonial from "./Components/Testimonial";
+
 import Footer from "./Components/Footer";
+
 
 const Index = () => {
   useEffect(() => {
@@ -32,20 +33,18 @@ const Index = () => {
   return (
     <>
       <CustomNavbar />
-      <div className="overflow-x-auto mx-2 sm:mx-0 bg-[#D0F0C0]">
+      <div className="overflow-x-auto mx-2 sm:mx-0 bg-[#d3d3d3]">
         <Hero />
-        <div id="about">
-          <About />
+        <div id="services">
+          <Services />
         </div>
-        <div id="gallery">
-          <Gallery />
+        <div id="Exploremore">
+          <Explore/>
         </div>
         <div id="destination">
-          <Destination />
+          <DestinationsNearby/>
         </div>
-        <div id="testimonial">
-          <Testimonial />
-        </div>
+        
         <div id="contact">
           <Contact />
         </div>

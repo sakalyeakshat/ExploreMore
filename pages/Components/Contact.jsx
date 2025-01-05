@@ -11,6 +11,7 @@ const Contact = () => {
 
   const [status, setStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false); // state for popup visibility
 
   const handleChange = (e) => {
     setFormData({
@@ -48,13 +49,23 @@ const Contact = () => {
     }
   };
 
+  // Show the popup when "Get Connected" button is clicked
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  // Close the popup
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              GET IN TOUCH WITH US
+              Reach Out To Us
             </h2>
 
             <div className="flex items-start space-x-4">
@@ -83,7 +94,7 @@ const Contact = () => {
                   Our Location
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  B-27/5, Vasant Vihar, Ujjain
+                  98 Shanti Saffire, Scheme no 140,Indore
                 </p>
               </div>
             </div>
@@ -107,7 +118,7 @@ const Contact = () => {
                 <h3 className="text-lg font-medium text-gray-900">
                   Phone Number
                 </h3>
-                <p className="mt-1 text-gray-600">+918085863266</p>
+                <p className="mt-1 text-gray-600">+919109399601</p>
               </div>
             </div>
 
@@ -129,84 +140,93 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-medium text-gray-900">Email</h3>
                 <a
-                  href="mailto:vakratundahomestay@gmail.com"
+                  href="mailto:sakalyeakshat@gmail.com"
                   className="mt-1 text-gray-600 hover:text-gray-900">
-                  vakratundahomestay@gmail.com
+                  sakalyeakshat@gmail.com
                 </a>
               </div>
             </div>
+
+            {/* Get Connected Button */}
+            <div className="mt-8">
+              <button
+                onClick={openPopup}
+                className="w-full py-3 px-4 bg-green-800 hover:bg-green-700 text-white font-semibold rounded-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                Get Connected
+              </button>
+            </div>
           </div>
 
-          <div className="bg-white shadow-lg rounded-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  required
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  required
-                />
-              </div>
-              <div>
-                <input
-                  type="tel"
-                  name="mobile"
-                  placeholder="Your Phone"
-                  value={formData.mobile}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <textarea
-                  rows="4"
-                  name="message"
-                  placeholder="Your Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  required></textarea>
-              </div>
-              <div>
+          {/* Popup Form */}
+          {isPopupOpen && (
+            <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
+              <div className="bg-white rounded-lg p-8 w-full max-w-md relative">
+                {/* Close Button (Cross) */}
                 <button
-                  type="submit"
-                  className="w-full py-3 px-4 bg-green-800 hover:bg-green-700 text-white font-semibold rounded-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                  disabled={isSubmitting}>
-                  {isSubmitting ? (
-                    <PropagateLoader
-                      color="white"
-                      size={8}
-                      speedMultiplier={0.7}
-                    />
-                  ) : (
-                    "Send Message"
-                  )}
+                  onClick={closePopup}
+                  className="absolute top-4 right-4 text-2xl font-bold text-gray-600 hover:text-gray-900">
+                  &times;
                 </button>
+                <h2 className="text-2xl font-semibold text-center mb-6">Contact Us</h2>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your Name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your Email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="tel"
+                      name="mobile"
+                      placeholder="Your Phone"
+                      value={formData.mobile}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      rows="4"
+                      name="message"
+                      placeholder="Your Message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      required></textarea>
+                  </div>
+                  <div>
+                    <button
+                      type="submit"
+                      className="w-full py-3 px-4 bg-green-800 hover:bg-green-700 text-white font-semibold rounded-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                      disabled={isSubmitting}>
+                      {isSubmitting ? (
+                        <PropagateLoader color="white" size={8} speedMultiplier={0.7} />
+                      ) : (
+                        "Send Message"
+                      )}
+                    </button>
+                  </div>
+                </form>
               </div>
-            </form>
-            {status && (
-              <p
-                className={`mt-4 text-center ${
-                  status.includes("Error") ? "text-red-600" : "text-green-600"
-                }`}>
-                {status}
-              </p>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </section>
@@ -214,3 +234,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+

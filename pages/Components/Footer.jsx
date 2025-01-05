@@ -8,7 +8,7 @@ const Footer = () => {
           className="flex justify-center flex-col-reverse items-center"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://wa.me/918085863266">
+          href="https://wa.me/919109399601">
           <svg
             className="w-12 h-12"
             viewBox="0 0 256 258"
@@ -57,11 +57,10 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="text-white border-t-2 border-white bg-green-900 pt-2 pb-5 border-t mt-md-5 d-flex flex-column flex-md-row justify-content-between">
+      <div className="text-white border-t-2 border-white bg-red-900 pt-2 pb-5 border-t mt-md-5 d-flex flex-column flex-md-row justify-content-between">
         <div className="text-center">
           <p className="mb-0">
-            Vakratundahomestay.com | Website Designed and Developed By Mayank &
-            Aaradhya
+            Explore-World.com
           </p>
         </div>
         <div className="text-center pt-3 pt-md-0">
