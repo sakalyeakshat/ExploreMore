@@ -2,6 +2,15 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router';  // Import useRouter hook
+import Image from 'next/image';
+
+<Image 
+  src="/path/to/image.jpg" 
+  alt="Description" 
+  width={500} 
+  height={300} 
+/>
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
